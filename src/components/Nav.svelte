@@ -53,15 +53,15 @@
 			{/if}
 		</li>
 		<li>
-			{#if $page.url.pathname == '/Contact'}
+			{#if $page.url.pathname == '/contact'}
 				<a
 					class="rubik relative flex rounded px-2 py-1 text-sm font-medium transition-all bg-zinc-900 md:inline-flex text-zinc-50"
-					href="/Contact">Contact</a
+					href="/contact">Contact</a
 				>
 			{:else}
 				<a
 					class="rubik relative flex rounded px-2 py-1 text-sm font-medium transition-all hover:bg-zinc-900 md:inline-flex text-zinc-300"
-					href="/Contact">Contact</a
+					href="/contact">Contact</a
 				>
 			{/if}
 		</li>

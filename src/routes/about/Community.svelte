@@ -9,6 +9,6 @@
 	<div class="flex flex-col gap-5 flex-wrap">
 		{#each Object.entries(allCommunity) as [company, items]}
 			<CommunityRole {company} {items} />
-		{/each}s
+		{/each}
 	</div>
 </section>
