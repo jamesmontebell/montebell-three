@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import Icon from '@iconify/svelte';
 </script>
 
 <nav
@@ -11,6 +12,10 @@
 				<span class="font-bold">James<span class="font-light">M</span></span>
 			</div>
 		</a>
+	</div>
+
+	<div class="text-white text-3xl">
+		<Icon icon="material-symbols:menu" />
 	</div>
 
 	<ul class="ml-auto hidden items-center gap-1.5 md:flex">
