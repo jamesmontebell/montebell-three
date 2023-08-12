@@ -1,6 +1,9 @@
 <script lang="ts">
+	import Burger from './Burger.svelte';
 	import { page } from '$app/stores';
 	import Icon from '@iconify/svelte';
+	import Menu from './Menu.svelte';
+	let open: boolean;
 </script>
 
 <nav
@@ -14,8 +17,12 @@
 		</a>
 	</div>
 
-	<div class="text-white text-3xl">
-		<Icon icon="material-symbols:menu" />
+	<div class="text-white md:hidden">
+		<!-- <Icon icon="material-symbols:menu" /> -->
+		<Burger bind:open />
+		<div class="fixed left-0 w-full">
+			<Menu bind:open />
+		</div>
 	</div>
 
 	<ul class="ml-auto hidden items-center gap-1.5 md:flex">
